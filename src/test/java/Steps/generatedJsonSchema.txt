@@ -1,0 +1,1749 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#",
+	"$id": "https://example.com/object1715159451.json",
+	"title": "Root",
+	"type": "object",
+	"required": [
+		"result",
+		"provider",
+		"documentation",
+		"terms_of_use",
+		"time_last_update_unix",
+		"time_last_update_utc",
+		"time_next_update_unix",
+		"time_next_update_utc",
+		"time_eol_unix",
+		"base_code",
+		"rates"
+	],
+	"properties": {
+		"result": {
+			"$id": "#root/result",
+			"title": "Result",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"success"
+			],
+			"pattern": "^.*$"
+		},
+		"provider": {
+			"$id": "#root/provider",
+			"title": "Provider",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://www.exchangerate-api.com"
+			],
+			"pattern": "^.*$"
+		},
+		"documentation": {
+			"$id": "#root/documentation",
+			"title": "Documentation",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://www.exchangerate-api.com/docs/free"
+			],
+			"pattern": "^.*$"
+		},
+		"terms_of_use": {
+			"$id": "#root/terms_of_use",
+			"title": "Terms_of_use",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"https://www.exchangerate-api.com/terms"
+			],
+			"pattern": "^.*$"
+		},
+		"time_last_update_unix": {
+			"$id": "#root/time_last_update_unix",
+			"title": "Time_last_update_unix",
+			"type": "integer",
+			"examples": [
+				1715126551
+			],
+			"default": 0
+		},
+		"time_last_update_utc": {
+			"$id": "#root/time_last_update_utc",
+			"title": "Time_last_update_utc",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"Wed, 08 May 2024 00:02:31 +0000"
+			],
+			"pattern": "^.*$"
+		},
+		"time_next_update_unix": {
+			"$id": "#root/time_next_update_unix",
+			"title": "Time_next_update_unix",
+			"type": "integer",
+			"examples": [
+				1715213741
+			],
+			"default": 0
+		},
+		"time_next_update_utc": {
+			"$id": "#root/time_next_update_utc",
+			"title": "Time_next_update_utc",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"Thu, 09 May 2024 00:15:41 +0000"
+			],
+			"pattern": "^.*$"
+		},
+		"time_eol_unix": {
+			"$id": "#root/time_eol_unix",
+			"title": "Time_eol_unix",
+			"type": "integer",
+			"examples": [
+				0
+			],
+			"default": 0
+		},
+		"base_code": {
+			"$id": "#root/base_code",
+			"title": "Base_code",
+			"type": "string",
+			"default": "",
+			"examples": [
+				"USD"
+			],
+			"pattern": "^.*$"
+		},
+		"rates": {
+			"$id": "#root/rates",
+			"title": "Rates",
+			"type": "object",
+			"required": [
+				"USD",
+				"AED",
+				"AFN",
+				"ALL",
+				"AMD",
+				"ANG",
+				"AOA",
+				"ARS",
+				"AUD",
+				"AWG",
+				"AZN",
+				"BAM",
+				"BBD",
+				"BDT",
+				"BGN",
+				"BHD",
+				"BIF",
+				"BMD",
+				"BND",
+				"BOB",
+				"BRL",
+				"BSD",
+				"BTN",
+				"BWP",
+				"BYN",
+				"BZD",
+				"CAD",
+				"CDF",
+				"CHF",
+				"CLP",
+				"CNY",
+				"COP",
+				"CRC",
+				"CUP",
+				"CVE",
+				"CZK",
+				"DJF",
+				"DKK",
+				"DOP",
+				"DZD",
+				"EGP",
+				"ERN",
+				"ETB",
+				"EUR",
+				"FJD",
+				"FKP",
+				"FOK",
+				"GBP",
+				"GEL",
+				"GGP",
+				"GHS",
+				"GIP",
+				"GMD",
+				"GNF",
+				"GTQ",
+				"GYD",
+				"HKD",
+				"HNL",
+				"HRK",
+				"HTG",
+				"HUF",
+				"IDR",
+				"ILS",
+				"IMP",
+				"INR",
+				"IQD",
+				"IRR",
+				"ISK",
+				"JEP",
+				"JMD",
+				"JOD",
+				"JPY",
+				"KES",
+				"KGS",
+				"KHR",
+				"KID",
+				"KMF",
+				"KRW",
+				"KWD",
+				"KYD",
+				"KZT",
+				"LAK",
+				"LBP",
+				"LKR",
+				"LRD",
+				"LSL",
+				"LYD",
+				"MAD",
+				"MDL",
+				"MGA",
+				"MKD",
+				"MMK",
+				"MNT",
+				"MOP",
+				"MRU",
+				"MUR",
+				"MVR",
+				"MWK",
+				"MXN",
+				"MYR",
+				"MZN",
+				"NAD",
+				"NGN",
+				"NIO",
+				"NOK",
+				"NPR",
+				"NZD",
+				"OMR",
+				"PAB",
+				"PEN",
+				"PGK",
+				"PHP",
+				"PKR",
+				"PLN",
+				"PYG",
+				"QAR",
+				"RON",
+				"RSD",
+				"RUB",
+				"RWF",
+				"SAR",
+				"SBD",
+				"SCR",
+				"SDG",
+				"SEK",
+				"SGD",
+				"SHP",
+				"SLE",
+				"SLL",
+				"SOS",
+				"SRD",
+				"SSP",
+				"STN",
+				"SYP",
+				"SZL",
+				"THB",
+				"TJS",
+				"TMT",
+				"TND",
+				"TOP",
+				"TRY",
+				"TTD",
+				"TVD",
+				"TWD",
+				"TZS",
+				"UAH",
+				"UGX",
+				"UYU",
+				"UZS",
+				"VES",
+				"VND",
+				"VUV",
+				"WST",
+				"XAF",
+				"XCD",
+				"XDR",
+				"XOF",
+				"XPF",
+				"YER",
+				"ZAR",
+				"ZMW",
+				"ZWL"
+			],
+			"properties": {
+				"USD": {
+					"$id": "#root/rates/USD",
+					"title": "Usd",
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"AED": {
+					"$id": "#root/rates/AED",
+					"title": "Aed",
+					"type": "number",
+					"examples": [
+						3.6725
+					],
+					"default": 0.0
+				},
+				"AFN": {
+					"$id": "#root/rates/AFN",
+					"title": "Afn",
+					"type": "number",
+					"examples": [
+						72.227878
+					],
+					"default": 0.0
+				},
+				"ALL": {
+					"$id": "#root/rates/ALL",
+					"title": "All",
+					"type": "number",
+					"examples": [
+						93.471275
+					],
+					"default": 0.0
+				},
+				"AMD": {
+					"$id": "#root/rates/AMD",
+					"title": "Amd",
+					"type": "number",
+					"examples": [
+						387.994681
+					],
+					"default": 0.0
+				},
+				"ANG": {
+					"$id": "#root/rates/ANG",
+					"title": "Ang",
+					"type": "number",
+					"examples": [
+						1.79
+					],
+					"default": 0.0
+				},
+				"AOA": {
+					"$id": "#root/rates/AOA",
+					"title": "Aoa",
+					"type": "number",
+					"examples": [
+						844.999321
+					],
+					"default": 0.0
+				},
+				"ARS": {
+					"$id": "#root/rates/ARS",
+					"title": "Ars",
+					"type": "number",
+					"examples": [
+						864.75
+					],
+					"default": 0.0
+				},
+				"AUD": {
+					"$id": "#root/rates/AUD",
+					"title": "Aud",
+					"type": "number",
+					"examples": [
+						1.515371
+					],
+					"default": 0.0
+				},
+				"AWG": {
+					"$id": "#root/rates/AWG",
+					"title": "Awg",
+					"type": "number",
+					"examples": [
+						1.79
+					],
+					"default": 0.0
+				},
+				"AZN": {
+					"$id": "#root/rates/AZN",
+					"title": "Azn",
+					"type": "number",
+					"examples": [
+						1.699868
+					],
+					"default": 0.0
+				},
+				"BAM": {
+					"$id": "#root/rates/BAM",
+					"title": "Bam",
+					"type": "number",
+					"examples": [
+						1.817349
+					],
+					"default": 0.0
+				},
+				"BBD": {
+					"$id": "#root/rates/BBD",
+					"title": "Bbd",
+					"type": "integer",
+					"examples": [
+						2
+					],
+					"default": 0
+				},
+				"BDT": {
+					"$id": "#root/rates/BDT",
+					"title": "Bdt",
+					"type": "number",
+					"examples": [
+						109.749067
+					],
+					"default": 0.0
+				},
+				"BGN": {
+					"$id": "#root/rates/BGN",
+					"title": "Bgn",
+					"type": "number",
+					"examples": [
+						1.817276
+					],
+					"default": 0.0
+				},
+				"BHD": {
+					"$id": "#root/rates/BHD",
+					"title": "Bhd",
+					"type": "number",
+					"examples": [
+						0.376
+					],
+					"default": 0.0
+				},
+				"BIF": {
+					"$id": "#root/rates/BIF",
+					"title": "Bif",
+					"type": "number",
+					"examples": [
+						2862.328597
+					],
+					"default": 0.0
+				},
+				"BMD": {
+					"$id": "#root/rates/BMD",
+					"title": "Bmd",
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"BND": {
+					"$id": "#root/rates/BND",
+					"title": "Bnd",
+					"type": "number",
+					"examples": [
+						1.353897
+					],
+					"default": 0.0
+				},
+				"BOB": {
+					"$id": "#root/rates/BOB",
+					"title": "Bob",
+					"type": "number",
+					"examples": [
+						6.913705
+					],
+					"default": 0.0
+				},
+				"BRL": {
+					"$id": "#root/rates/BRL",
+					"title": "Brl",
+					"type": "number",
+					"examples": [
+						5.075227
+					],
+					"default": 0.0
+				},
+				"BSD": {
+					"$id": "#root/rates/BSD",
+					"title": "Bsd",
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"BTN": {
+					"$id": "#root/rates/BTN",
+					"title": "Btn",
+					"type": "number",
+					"examples": [
+						83.497915
+					],
+					"default": 0.0
+				},
+				"BWP": {
+					"$id": "#root/rates/BWP",
+					"title": "Bwp",
+					"type": "number",
+					"examples": [
+						13.608099
+					],
+					"default": 0.0
+				},
+				"BYN": {
+					"$id": "#root/rates/BYN",
+					"title": "Byn",
+					"type": "number",
+					"examples": [
+						3.266743
+					],
+					"default": 0.0
+				},
+				"BZD": {
+					"$id": "#root/rates/BZD",
+					"title": "Bzd",
+					"type": "integer",
+					"examples": [
+						2
+					],
+					"default": 0
+				},
+				"CAD": {
+					"$id": "#root/rates/CAD",
+					"title": "Cad",
+					"type": "number",
+					"examples": [
+						1.370761
+					],
+					"default": 0.0
+				},
+				"CDF": {
+					"$id": "#root/rates/CDF",
+					"title": "Cdf",
+					"type": "number",
+					"examples": [
+						2756.253161
+					],
+					"default": 0.0
+				},
+				"CHF": {
+					"$id": "#root/rates/CHF",
+					"title": "Chf",
+					"type": "number",
+					"examples": [
+						0.907797
+					],
+					"default": 0.0
+				},
+				"CLP": {
+					"$id": "#root/rates/CLP",
+					"title": "Clp",
+					"type": "number",
+					"examples": [
+						930.397101
+					],
+					"default": 0.0
+				},
+				"CNY": {
+					"$id": "#root/rates/CNY",
+					"title": "Cny",
+					"type": "number",
+					"examples": [
+						7.220039
+					],
+					"default": 0.0
+				},
+				"COP": {
+					"$id": "#root/rates/COP",
+					"title": "Cop",
+					"type": "number",
+					"examples": [
+						3891.871719
+					],
+					"default": 0.0
+				},
+				"CRC": {
+					"$id": "#root/rates/CRC",
+					"title": "Crc",
+					"type": "number",
+					"examples": [
+						510.047614
+					],
+					"default": 0.0
+				},
+				"CUP": {
+					"$id": "#root/rates/CUP",
+					"title": "Cup",
+					"type": "integer",
+					"examples": [
+						24
+					],
+					"default": 0
+				},
+				"CVE": {
+					"$id": "#root/rates/CVE",
+					"title": "Cve",
+					"type": "number",
+					"examples": [
+						102.457777
+					],
+					"default": 0.0
+				},
+				"CZK": {
+					"$id": "#root/rates/CZK",
+					"title": "Czk",
+					"type": "number",
+					"examples": [
+						23.25821
+					],
+					"default": 0.0
+				},
+				"DJF": {
+					"$id": "#root/rates/DJF",
+					"title": "Djf",
+					"type": "number",
+					"examples": [
+						177.721
+					],
+					"default": 0.0
+				},
+				"DKK": {
+					"$id": "#root/rates/DKK",
+					"title": "Dkk",
+					"type": "number",
+					"examples": [
+						6.93437
+					],
+					"default": 0.0
+				},
+				"DOP": {
+					"$id": "#root/rates/DOP",
+					"title": "Dop",
+					"type": "number",
+					"examples": [
+						58.016589
+					],
+					"default": 0.0
+				},
+				"DZD": {
+					"$id": "#root/rates/DZD",
+					"title": "Dzd",
+					"type": "number",
+					"examples": [
+						134.351476
+					],
+					"default": 0.0
+				},
+				"EGP": {
+					"$id": "#root/rates/EGP",
+					"title": "Egp",
+					"type": "number",
+					"examples": [
+						47.721884
+					],
+					"default": 0.0
+				},
+				"ERN": {
+					"$id": "#root/rates/ERN",
+					"title": "Ern",
+					"type": "integer",
+					"examples": [
+						15
+					],
+					"default": 0
+				},
+				"ETB": {
+					"$id": "#root/rates/ETB",
+					"title": "Etb",
+					"type": "number",
+					"examples": [
+						57.446523
+					],
+					"default": 0.0
+				},
+				"EUR": {
+					"$id": "#root/rates/EUR",
+					"title": "Eur",
+					"type": "number",
+					"examples": [
+						0.929233
+					],
+					"default": 0.0
+				},
+				"FJD": {
+					"$id": "#root/rates/FJD",
+					"title": "Fjd",
+					"type": "number",
+					"examples": [
+						2.24196
+					],
+					"default": 0.0
+				},
+				"FKP": {
+					"$id": "#root/rates/FKP",
+					"title": "Fkp",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"FOK": {
+					"$id": "#root/rates/FOK",
+					"title": "Fok",
+					"type": "number",
+					"examples": [
+						6.933974
+					],
+					"default": 0.0
+				},
+				"GBP": {
+					"$id": "#root/rates/GBP",
+					"title": "Gbp",
+					"type": "number",
+					"examples": [
+						0.79852
+					],
+					"default": 0.0
+				},
+				"GEL": {
+					"$id": "#root/rates/GEL",
+					"title": "Gel",
+					"type": "number",
+					"examples": [
+						2.679773
+					],
+					"default": 0.0
+				},
+				"GGP": {
+					"$id": "#root/rates/GGP",
+					"title": "Ggp",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"GHS": {
+					"$id": "#root/rates/GHS",
+					"title": "Ghs",
+					"type": "number",
+					"examples": [
+						14.010714
+					],
+					"default": 0.0
+				},
+				"GIP": {
+					"$id": "#root/rates/GIP",
+					"title": "Gip",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"GMD": {
+					"$id": "#root/rates/GMD",
+					"title": "Gmd",
+					"type": "number",
+					"examples": [
+						65.116629
+					],
+					"default": 0.0
+				},
+				"GNF": {
+					"$id": "#root/rates/GNF",
+					"title": "Gnf",
+					"type": "number",
+					"examples": [
+						8569.826334
+					],
+					"default": 0.0
+				},
+				"GTQ": {
+					"$id": "#root/rates/GTQ",
+					"title": "Gtq",
+					"type": "number",
+					"examples": [
+						7.764232
+					],
+					"default": 0.0
+				},
+				"GYD": {
+					"$id": "#root/rates/GYD",
+					"title": "Gyd",
+					"type": "number",
+					"examples": [
+						209.189925
+					],
+					"default": 0.0
+				},
+				"HKD": {
+					"$id": "#root/rates/HKD",
+					"title": "Hkd",
+					"type": "number",
+					"examples": [
+						7.821372
+					],
+					"default": 0.0
+				},
+				"HNL": {
+					"$id": "#root/rates/HNL",
+					"title": "Hnl",
+					"type": "number",
+					"examples": [
+						24.681185
+					],
+					"default": 0.0
+				},
+				"HRK": {
+					"$id": "#root/rates/HRK",
+					"title": "Hrk",
+					"type": "number",
+					"examples": [
+						7.001026
+					],
+					"default": 0.0
+				},
+				"HTG": {
+					"$id": "#root/rates/HTG",
+					"title": "Htg",
+					"type": "number",
+					"examples": [
+						132.471614
+					],
+					"default": 0.0
+				},
+				"HUF": {
+					"$id": "#root/rates/HUF",
+					"title": "Huf",
+					"type": "number",
+					"examples": [
+						361.556776
+					],
+					"default": 0.0
+				},
+				"IDR": {
+					"$id": "#root/rates/IDR",
+					"title": "Idr",
+					"type": "number",
+					"examples": [
+						16062.497185
+					],
+					"default": 0.0
+				},
+				"ILS": {
+					"$id": "#root/rates/ILS",
+					"title": "Ils",
+					"type": "number",
+					"examples": [
+						3.700637
+					],
+					"default": 0.0
+				},
+				"IMP": {
+					"$id": "#root/rates/IMP",
+					"title": "Imp",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"INR": {
+					"$id": "#root/rates/INR",
+					"title": "Inr",
+					"type": "number",
+					"examples": [
+						83.497949
+					],
+					"default": 0.0
+				},
+				"IQD": {
+					"$id": "#root/rates/IQD",
+					"title": "Iqd",
+					"type": "number",
+					"examples": [
+						1307.659574
+					],
+					"default": 0.0
+				},
+				"IRR": {
+					"$id": "#root/rates/IRR",
+					"title": "Irr",
+					"type": "number",
+					"examples": [
+						42071.672847
+					],
+					"default": 0.0
+				},
+				"ISK": {
+					"$id": "#root/rates/ISK",
+					"title": "Isk",
+					"type": "number",
+					"examples": [
+						139.617793
+					],
+					"default": 0.0
+				},
+				"JEP": {
+					"$id": "#root/rates/JEP",
+					"title": "Jep",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"JMD": {
+					"$id": "#root/rates/JMD",
+					"title": "Jmd",
+					"type": "number",
+					"examples": [
+						156.768959
+					],
+					"default": 0.0
+				},
+				"JOD": {
+					"$id": "#root/rates/JOD",
+					"title": "Jod",
+					"type": "number",
+					"examples": [
+						0.709
+					],
+					"default": 0.0
+				},
+				"JPY": {
+					"$id": "#root/rates/JPY",
+					"title": "Jpy",
+					"type": "number",
+					"examples": [
+						154.559159
+					],
+					"default": 0.0
+				},
+				"KES": {
+					"$id": "#root/rates/KES",
+					"title": "Kes",
+					"type": "number",
+					"examples": [
+						133.245959
+					],
+					"default": 0.0
+				},
+				"KGS": {
+					"$id": "#root/rates/KGS",
+					"title": "Kgs",
+					"type": "number",
+					"examples": [
+						89.098035
+					],
+					"default": 0.0
+				},
+				"KHR": {
+					"$id": "#root/rates/KHR",
+					"title": "Khr",
+					"type": "number",
+					"examples": [
+						4097.333333
+					],
+					"default": 0.0
+				},
+				"KID": {
+					"$id": "#root/rates/KID",
+					"title": "Kid",
+					"type": "number",
+					"examples": [
+						1.515304
+					],
+					"default": 0.0
+				},
+				"KMF": {
+					"$id": "#root/rates/KMF",
+					"title": "Kmf",
+					"type": "number",
+					"examples": [
+						457.134378
+					],
+					"default": 0.0
+				},
+				"KRW": {
+					"$id": "#root/rates/KRW",
+					"title": "Krw",
+					"type": "number",
+					"examples": [
+						1357.896258
+					],
+					"default": 0.0
+				},
+				"KWD": {
+					"$id": "#root/rates/KWD",
+					"title": "Kwd",
+					"type": "number",
+					"examples": [
+						0.307385
+					],
+					"default": 0.0
+				},
+				"KYD": {
+					"$id": "#root/rates/KYD",
+					"title": "Kyd",
+					"type": "number",
+					"examples": [
+						0.833333
+					],
+					"default": 0.0
+				},
+				"KZT": {
+					"$id": "#root/rates/KZT",
+					"title": "Kzt",
+					"type": "number",
+					"examples": [
+						439.979724
+					],
+					"default": 0.0
+				},
+				"LAK": {
+					"$id": "#root/rates/LAK",
+					"title": "Lak",
+					"type": "number",
+					"examples": [
+						21679.873357
+					],
+					"default": 0.0
+				},
+				"LBP": {
+					"$id": "#root/rates/LBP",
+					"title": "Lbp",
+					"type": "integer",
+					"examples": [
+						89500
+					],
+					"default": 0
+				},
+				"LKR": {
+					"$id": "#root/rates/LKR",
+					"title": "Lkr",
+					"type": "number",
+					"examples": [
+						299.331687
+					],
+					"default": 0.0
+				},
+				"LRD": {
+					"$id": "#root/rates/LRD",
+					"title": "Lrd",
+					"type": "number",
+					"examples": [
+						193.197926
+					],
+					"default": 0.0
+				},
+				"LSL": {
+					"$id": "#root/rates/LSL",
+					"title": "Lsl",
+					"type": "number",
+					"examples": [
+						18.500326
+					],
+					"default": 0.0
+				},
+				"LYD": {
+					"$id": "#root/rates/LYD",
+					"title": "Lyd",
+					"type": "number",
+					"examples": [
+						4.852744
+					],
+					"default": 0.0
+				},
+				"MAD": {
+					"$id": "#root/rates/MAD",
+					"title": "Mad",
+					"type": "number",
+					"examples": [
+						10.034461
+					],
+					"default": 0.0
+				},
+				"MDL": {
+					"$id": "#root/rates/MDL",
+					"title": "Mdl",
+					"type": "number",
+					"examples": [
+						17.644144
+					],
+					"default": 0.0
+				},
+				"MGA": {
+					"$id": "#root/rates/MGA",
+					"title": "Mga",
+					"type": "number",
+					"examples": [
+						4433.559954
+					],
+					"default": 0.0
+				},
+				"MKD": {
+					"$id": "#root/rates/MKD",
+					"title": "Mkd",
+					"type": "number",
+					"examples": [
+						57.4827
+					],
+					"default": 0.0
+				},
+				"MMK": {
+					"$id": "#root/rates/MMK",
+					"title": "Mmk",
+					"type": "number",
+					"examples": [
+						2100.824845
+					],
+					"default": 0.0
+				},
+				"MNT": {
+					"$id": "#root/rates/MNT",
+					"title": "Mnt",
+					"type": "number",
+					"examples": [
+						3402.223486
+					],
+					"default": 0.0
+				},
+				"MOP": {
+					"$id": "#root/rates/MOP",
+					"title": "Mop",
+					"type": "number",
+					"examples": [
+						8.056013
+					],
+					"default": 0.0
+				},
+				"MRU": {
+					"$id": "#root/rates/MRU",
+					"title": "Mru",
+					"type": "number",
+					"examples": [
+						39.909091
+					],
+					"default": 0.0
+				},
+				"MUR": {
+					"$id": "#root/rates/MUR",
+					"title": "Mur",
+					"type": "number",
+					"examples": [
+						46.269199
+					],
+					"default": 0.0
+				},
+				"MVR": {
+					"$id": "#root/rates/MVR",
+					"title": "Mvr",
+					"type": "number",
+					"examples": [
+						15.440084
+					],
+					"default": 0.0
+				},
+				"MWK": {
+					"$id": "#root/rates/MWK",
+					"title": "Mwk",
+					"type": "number",
+					"examples": [
+						1744.558104
+					],
+					"default": 0.0
+				},
+				"MXN": {
+					"$id": "#root/rates/MXN",
+					"title": "Mxn",
+					"type": "number",
+					"examples": [
+						16.903998
+					],
+					"default": 0.0
+				},
+				"MYR": {
+					"$id": "#root/rates/MYR",
+					"title": "Myr",
+					"type": "number",
+					"examples": [
+						4.738407
+					],
+					"default": 0.0
+				},
+				"MZN": {
+					"$id": "#root/rates/MZN",
+					"title": "Mzn",
+					"type": "number",
+					"examples": [
+						63.836939
+					],
+					"default": 0.0
+				},
+				"NAD": {
+					"$id": "#root/rates/NAD",
+					"title": "Nad",
+					"type": "number",
+					"examples": [
+						18.500326
+					],
+					"default": 0.0
+				},
+				"NGN": {
+					"$id": "#root/rates/NGN",
+					"title": "Ngn",
+					"type": "number",
+					"examples": [
+						1377.373461
+					],
+					"default": 0.0
+				},
+				"NIO": {
+					"$id": "#root/rates/NIO",
+					"title": "Nio",
+					"type": "number",
+					"examples": [
+						36.795547
+					],
+					"default": 0.0
+				},
+				"NOK": {
+					"$id": "#root/rates/NOK",
+					"title": "Nok",
+					"type": "number",
+					"examples": [
+						10.897346
+					],
+					"default": 0.0
+				},
+				"NPR": {
+					"$id": "#root/rates/NPR",
+					"title": "Npr",
+					"type": "number",
+					"examples": [
+						133.596663
+					],
+					"default": 0.0
+				},
+				"NZD": {
+					"$id": "#root/rates/NZD",
+					"title": "Nzd",
+					"type": "number",
+					"examples": [
+						1.665938
+					],
+					"default": 0.0
+				},
+				"OMR": {
+					"$id": "#root/rates/OMR",
+					"title": "Omr",
+					"type": "number",
+					"examples": [
+						0.384497
+					],
+					"default": 0.0
+				},
+				"PAB": {
+					"$id": "#root/rates/PAB",
+					"title": "Pab",
+					"type": "integer",
+					"examples": [
+						1
+					],
+					"default": 0
+				},
+				"PEN": {
+					"$id": "#root/rates/PEN",
+					"title": "Pen",
+					"type": "number",
+					"examples": [
+						3.726853
+					],
+					"default": 0.0
+				},
+				"PGK": {
+					"$id": "#root/rates/PGK",
+					"title": "Pgk",
+					"type": "number",
+					"examples": [
+						3.855545
+					],
+					"default": 0.0
+				},
+				"PHP": {
+					"$id": "#root/rates/PHP",
+					"title": "Php",
+					"type": "number",
+					"examples": [
+						57.277789
+					],
+					"default": 0.0
+				},
+				"PKR": {
+					"$id": "#root/rates/PKR",
+					"title": "Pkr",
+					"type": "number",
+					"examples": [
+						278.081353
+					],
+					"default": 0.0
+				},
+				"PLN": {
+					"$id": "#root/rates/PLN",
+					"title": "Pln",
+					"type": "number",
+					"examples": [
+						4.007891
+					],
+					"default": 0.0
+				},
+				"PYG": {
+					"$id": "#root/rates/PYG",
+					"title": "Pyg",
+					"type": "number",
+					"examples": [
+						7482.364383
+					],
+					"default": 0.0
+				},
+				"QAR": {
+					"$id": "#root/rates/QAR",
+					"title": "Qar",
+					"type": "number",
+					"examples": [
+						3.64
+					],
+					"default": 0.0
+				},
+				"RON": {
+					"$id": "#root/rates/RON",
+					"title": "Ron",
+					"type": "number",
+					"examples": [
+						4.621363
+					],
+					"default": 0.0
+				},
+				"RSD": {
+					"$id": "#root/rates/RSD",
+					"title": "Rsd",
+					"type": "number",
+					"examples": [
+						108.797731
+					],
+					"default": 0.0
+				},
+				"RUB": {
+					"$id": "#root/rates/RUB",
+					"title": "Rub",
+					"type": "number",
+					"examples": [
+						91.362248
+					],
+					"default": 0.0
+				},
+				"RWF": {
+					"$id": "#root/rates/RWF",
+					"title": "Rwf",
+					"type": "number",
+					"examples": [
+						1304.818054
+					],
+					"default": 0.0
+				},
+				"SAR": {
+					"$id": "#root/rates/SAR",
+					"title": "Sar",
+					"type": "number",
+					"examples": [
+						3.75
+					],
+					"default": 0.0
+				},
+				"SBD": {
+					"$id": "#root/rates/SBD",
+					"title": "Sbd",
+					"type": "number",
+					"examples": [
+						8.507296
+					],
+					"default": 0.0
+				},
+				"SCR": {
+					"$id": "#root/rates/SCR",
+					"title": "Scr",
+					"type": "number",
+					"examples": [
+						13.713588
+					],
+					"default": 0.0
+				},
+				"SDG": {
+					"$id": "#root/rates/SDG",
+					"title": "Sdg",
+					"type": "number",
+					"examples": [
+						447.307132
+					],
+					"default": 0.0
+				},
+				"SEK": {
+					"$id": "#root/rates/SEK",
+					"title": "Sek",
+					"type": "number",
+					"examples": [
+						10.853999
+					],
+					"default": 0.0
+				},
+				"SGD": {
+					"$id": "#root/rates/SGD",
+					"title": "Sgd",
+					"type": "number",
+					"examples": [
+						1.353943
+					],
+					"default": 0.0
+				},
+				"SHP": {
+					"$id": "#root/rates/SHP",
+					"title": "Shp",
+					"type": "number",
+					"examples": [
+						0.798485
+					],
+					"default": 0.0
+				},
+				"SLE": {
+					"$id": "#root/rates/SLE",
+					"title": "Sle",
+					"type": "number",
+					"examples": [
+						22.723343
+					],
+					"default": 0.0
+				},
+				"SLL": {
+					"$id": "#root/rates/SLL",
+					"title": "Sll",
+					"type": "number",
+					"examples": [
+						22723.343035
+					],
+					"default": 0.0
+				},
+				"SOS": {
+					"$id": "#root/rates/SOS",
+					"title": "Sos",
+					"type": "number",
+					"examples": [
+						571.189591
+					],
+					"default": 0.0
+				},
+				"SRD": {
+					"$id": "#root/rates/SRD",
+					"title": "Srd",
+					"type": "number",
+					"examples": [
+						33.089265
+					],
+					"default": 0.0
+				},
+				"SSP": {
+					"$id": "#root/rates/SSP",
+					"title": "Ssp",
+					"type": "number",
+					"examples": [
+						1592.439518
+					],
+					"default": 0.0
+				},
+				"STN": {
+					"$id": "#root/rates/STN",
+					"title": "Stn",
+					"type": "number",
+					"examples": [
+						22.765298
+					],
+					"default": 0.0
+				},
+				"SYP": {
+					"$id": "#root/rates/SYP",
+					"title": "Syp",
+					"type": "number",
+					"examples": [
+						12894.211456
+					],
+					"default": 0.0
+				},
+				"SZL": {
+					"$id": "#root/rates/SZL",
+					"title": "Szl",
+					"type": "number",
+					"examples": [
+						18.500326
+					],
+					"default": 0.0
+				},
+				"THB": {
+					"$id": "#root/rates/THB",
+					"title": "Thb",
+					"type": "number",
+					"examples": [
+						36.868118
+					],
+					"default": 0.0
+				},
+				"TJS": {
+					"$id": "#root/rates/TJS",
+					"title": "Tjs",
+					"type": "number",
+					"examples": [
+						10.94407
+					],
+					"default": 0.0
+				},
+				"TMT": {
+					"$id": "#root/rates/TMT",
+					"title": "Tmt",
+					"type": "number",
+					"examples": [
+						3.500012
+					],
+					"default": 0.0
+				},
+				"TND": {
+					"$id": "#root/rates/TND",
+					"title": "Tnd",
+					"type": "number",
+					"examples": [
+						3.129655
+					],
+					"default": 0.0
+				},
+				"TOP": {
+					"$id": "#root/rates/TOP",
+					"title": "Top",
+					"type": "number",
+					"examples": [
+						2.336983
+					],
+					"default": 0.0
+				},
+				"TRY": {
+					"$id": "#root/rates/TRY",
+					"title": "Try",
+					"type": "number",
+					"examples": [
+						32.269512
+					],
+					"default": 0.0
+				},
+				"TTD": {
+					"$id": "#root/rates/TTD",
+					"title": "Ttd",
+					"type": "number",
+					"examples": [
+						6.766492
+					],
+					"default": 0.0
+				},
+				"TVD": {
+					"$id": "#root/rates/TVD",
+					"title": "Tvd",
+					"type": "number",
+					"examples": [
+						1.515304
+					],
+					"default": 0.0
+				},
+				"TWD": {
+					"$id": "#root/rates/TWD",
+					"title": "Twd",
+					"type": "number",
+					"examples": [
+						32.3716
+					],
+					"default": 0.0
+				},
+				"TZS": {
+					"$id": "#root/rates/TZS",
+					"title": "Tzs",
+					"type": "number",
+					"examples": [
+						2584.734444
+					],
+					"default": 0.0
+				},
+				"UAH": {
+					"$id": "#root/rates/UAH",
+					"title": "Uah",
+					"type": "number",
+					"examples": [
+						39.313413
+					],
+					"default": 0.0
+				},
+				"UGX": {
+					"$id": "#root/rates/UGX",
+					"title": "Ugx",
+					"type": "number",
+					"examples": [
+						3759.775498
+					],
+					"default": 0.0
+				},
+				"UYU": {
+					"$id": "#root/rates/UYU",
+					"title": "Uyu",
+					"type": "number",
+					"examples": [
+						38.128836
+					],
+					"default": 0.0
+				},
+				"UZS": {
+					"$id": "#root/rates/UZS",
+					"title": "Uzs",
+					"type": "number",
+					"examples": [
+						12721.677986
+					],
+					"default": 0.0
+				},
+				"VES": {
+					"$id": "#root/rates/VES",
+					"title": "Ves",
+					"type": "number",
+					"examples": [
+						36.5621
+					],
+					"default": 0.0
+				},
+				"VND": {
+					"$id": "#root/rates/VND",
+					"title": "Vnd",
+					"type": "number",
+					"examples": [
+						25360.803305
+					],
+					"default": 0.0
+				},
+				"VUV": {
+					"$id": "#root/rates/VUV",
+					"title": "Vuv",
+					"type": "number",
+					"examples": [
+						119.686636
+					],
+					"default": 0.0
+				},
+				"WST": {
+					"$id": "#root/rates/WST",
+					"title": "Wst",
+					"type": "number",
+					"examples": [
+						2.747225
+					],
+					"default": 0.0
+				},
+				"XAF": {
+					"$id": "#root/rates/XAF",
+					"title": "Xaf",
+					"type": "number",
+					"examples": [
+						609.512505
+					],
+					"default": 0.0
+				},
+				"XCD": {
+					"$id": "#root/rates/XCD",
+					"title": "Xcd",
+					"type": "number",
+					"examples": [
+						2.7
+					],
+					"default": 0.0
+				},
+				"XDR": {
+					"$id": "#root/rates/XDR",
+					"title": "Xdr",
+					"type": "number",
+					"examples": [
+						0.756663
+					],
+					"default": 0.0
+				},
+				"XOF": {
+					"$id": "#root/rates/XOF",
+					"title": "Xof",
+					"type": "number",
+					"examples": [
+						609.512505
+					],
+					"default": 0.0
+				},
+				"XPF": {
+					"$id": "#root/rates/XPF",
+					"title": "Xpf",
+					"type": "number",
+					"examples": [
+						110.882796
+					],
+					"default": 0.0
+				},
+				"YER": {
+					"$id": "#root/rates/YER",
+					"title": "Yer",
+					"type": "number",
+					"examples": [
+						250.217391
+					],
+					"default": 0.0
+				},
+				"ZAR": {
+					"$id": "#root/rates/ZAR",
+					"title": "Zar",
+					"type": "number",
+					"examples": [
+						18.500878
+					],
+					"default": 0.0
+				},
+				"ZMW": {
+					"$id": "#root/rates/ZMW",
+					"title": "Zmw",
+					"type": "number",
+					"examples": [
+						27.223377
+					],
+					"default": 0.0
+				},
+				"ZWL": {
+					"$id": "#root/rates/ZWL",
+					"title": "Zwl",
+					"type": "number",
+					"examples": [
+						13.6689
+					],
+					"default": 0.0
+				}
+			}
+		}
+
+	}
+}

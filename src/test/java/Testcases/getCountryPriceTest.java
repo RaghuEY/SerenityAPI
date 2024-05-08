@@ -36,4 +36,12 @@ public class getCountryPriceTest {
         stepRef.getCurrencyPairCount();
 
     }
+
+    @Title("Validate the Json Schema against the API Response")
+    @Test
+    public void validateJsonSchema(){
+        stepRef.validateStatusCode(200);
+        stepRef.verifyResponseBody("result","success");
+        stepRef.verifyJSONSchema();
+    }
 }
