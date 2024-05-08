@@ -10,7 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 @RunWith(SerenityRunner.class)
-public class getCountryPriceTest {
+public class countryAPIValidation {
     @Steps
     WebServiceApiSteps stepRef;
 
@@ -43,5 +43,13 @@ public class getCountryPriceTest {
         stepRef.validateStatusCode(200);
         stepRef.verifyResponseBody("result","success");
         stepRef.verifyJSONSchema();
+    }
+
+    @Title("Validate the API Response Time")
+    @Test
+    public void validateApiResponseTime(){
+        stepRef.validateStatusCode(200);
+        stepRef.verifyResponseBody("result","success");
+        stepRef.valAPIResponseTime();
     }
 }

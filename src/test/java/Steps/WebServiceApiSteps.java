@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 
-import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.*;
 
 public class WebServiceApiSteps {
     public static final String BASE_PATH = "./src/test/java/Steps/";
@@ -86,6 +86,16 @@ public class WebServiceApiSteps {
             throw new RuntimeException(e);
         }
 
+
+    }
+
+
+    @Step("validate the API Response Time")
+    public void valAPIResponseTime(){
+        response = SerenityRest.given()
+                .relaxedHTTPSValidation()
+                .headers(new Headers()).when().get("USD");
+        response.then().assertThat().time(greaterThan(3000L));
 
     }
 }
